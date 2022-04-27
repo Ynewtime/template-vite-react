@@ -1,0 +1,6 @@
+**/*.svg
+**/*.html
+package.json
+dist
+node_modules
+public
