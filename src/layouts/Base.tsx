@@ -1,4 +1,4 @@
-import { ThemeProvider } from '@/modules/dark'
+import { ThemeProvider } from '@/modules/theme'
 import * as React from 'react'
 
 export default React.memo(function Layout({ children }: { children: JSX.Element }) {

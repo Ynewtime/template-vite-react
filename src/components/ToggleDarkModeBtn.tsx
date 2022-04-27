@@ -1,4 +1,4 @@
-import { isDarkAtom, themeAtom } from '@/modules/dark'
+import { isDarkAtom, themeAtom } from '@/modules/theme'
 import { classNames } from '@/modules/utils'
 import { useAtomValue, useSetAtom } from 'jotai'
 import * as React from 'react'
