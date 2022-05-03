@@ -11,19 +11,10 @@ export default React.memo(function DemoPage() {
   const back = () => navigate('/')
 
   return (
-    <div className="divide-y flex flex-col min-h-screen divide-gray-500 select-none">
-      <div className="flex-1 grid place-items-center">
-        <ToggleDarkModeBtn />
-      </div>
-      <div className="flex-1 grid place-items-center">
-        <ToggleLngBtn />
-      </div>
-      <div className="flex-1 grid place-items-center">
-        <span
-          onClick={back}
-          className="cursor-pointer h-5 w-5 base-color heroicons-outline:arrow-left"
-        />
-      </div>
+    <div className="min-h-screen select-none grid auto-cols-fr auto-rows-fr place-items-center">
+      <ToggleDarkModeBtn className="hover:(h-8 w-8)" />
+      <ToggleLngBtn className="hover:text-xl" />
+      <div onClick={back} className="cursor-pointer h-5 w-5 color-base heroicons-outline:arrow-left hover:(h-8 w-8)" />
     </div>
   )
 })
