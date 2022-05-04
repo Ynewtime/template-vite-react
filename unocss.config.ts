@@ -2,7 +2,7 @@ import {
   defineConfig,
   presetIcons,
   presetUno,
-  presetWebFonts,
+  // presetWebFonts,
   transformerDirectives,
   transformerVariantGroup,
 } from 'unocss'
@@ -13,12 +13,12 @@ export default defineConfig({
   presets: [
     presetUno(),
     presetIcons({ prefix: '' }),
-    presetWebFonts({
-      fonts: {
-        sans: 'Inter',
-        mono: 'IBM Plex Mono',
-      },
-    }),
+    // Disabled when connecting to the intranet
+    // presetWebFonts({
+    //   fonts: {
+    //     sans: 'Inter',
+    //   },
+    // }),
   ],
   shortcuts: [
     {

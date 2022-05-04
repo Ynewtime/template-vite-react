@@ -11,10 +11,10 @@ export default React.memo(function DemoPage() {
   const back = () => navigate('/')
 
   return (
-    <div className="min-h-screen select-none grid auto-cols-fr auto-rows-fr place-items-center">
-      <ToggleDarkModeBtn className="hover:(h-8 w-8)" />
+    <div className="min-h-screen auto-cols-fr auto-rows-fr grid select-none place-items-center">
+      <ToggleDarkModeBtn className="hover:(h-8 w-8) " />
       <ToggleLngBtn className="hover:text-xl" />
-      <div onClick={back} className="cursor-pointer h-5 w-5 color-base heroicons-outline:arrow-left hover:(h-8 w-8)" />
+      <div onClick={back} className="cursor-pointer h-5 w-5 color-base heroicons-outline:arrow-left hover:(h-8 w-8) " />
     </div>
   )
 })
