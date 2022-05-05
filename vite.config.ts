@@ -3,7 +3,7 @@
 import React from '@vitejs/plugin-react'
 import jotaiDebugLabel from 'jotai/babel/plugin-debug-label'
 import jotaiReactRefresh from 'jotai/babel/plugin-react-refresh'
-import path from 'path'
+import * as path from 'path'
 import Unocss from 'unocss/vite'
 import type { UserConfig } from 'vite'
 import { defineConfig } from 'vite'
