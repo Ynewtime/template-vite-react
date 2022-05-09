@@ -13,7 +13,7 @@ export default React.memo(function ToggleDarkModeBtn({ className = '' }: { class
       onClick={handleSetTheme}
       className={classNames(
         'cursor-pointer h-5 w-5 color-base',
-        isDark ? 'heroicons-outline:moon' : 'heroicons-outline:sun',
+        isDark ? 'i-heroicons-outline:moon' : 'i-heroicons-outline:sun',
         className,
       )}
     />

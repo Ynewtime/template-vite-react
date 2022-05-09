@@ -14,7 +14,10 @@ export default React.memo(function DemoPage() {
     <div className="min-h-screen auto-cols-fr auto-rows-fr grid select-none place-items-center">
       <ToggleDarkModeBtn className="hover:(h-8 w-8) " />
       <ToggleLngBtn className="hover:text-xl" />
-      <div onClick={back} className="cursor-pointer h-5 w-5 color-base heroicons-outline:arrow-left hover:(h-8 w-8) " />
+      <div
+        onClick={back}
+        className="cursor-pointer h-5 w-5 color-base i-heroicons-outline:arrow-left hover:(h-8 w-8) "
+      />
     </div>
   )
 })

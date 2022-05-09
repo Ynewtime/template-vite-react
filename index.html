@@ -7,6 +7,21 @@
   </head>
   <body>
     <div id="root"></div>
+    <script>
+      ;(function () {
+        // Load Inter fonts if not available
+        document.fonts.ready.then(() => {
+          if (!document.fonts.check('16px Inter')) {
+            const head = document.getElementsByTagName('head')[0]
+            const link = document.createElement('link')
+            link.type = 'text/css'
+            link.rel = 'stylesheet'
+            head.appendChild(link)
+            link.href = 'https://rsms.me/inter/inter.css'
+          }
+        })
+      })()
+    </script>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
