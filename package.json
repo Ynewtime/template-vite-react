@@ -10,9 +10,9 @@
   },
   "dependencies": {
     "@unocss/reset": "0.33.4",
-    "ahooks": "3.3.10",
+    "ahooks": "3.3.12",
     "axios": "0.27.2",
-    "i18next": "21.8.1",
+    "i18next": "21.8.2",
     "i18next-browser-languagedetector": "6.1.4",
     "jotai": "1.6.6",
     "react": "18.1.0",
@@ -39,6 +39,6 @@
     "typescript": "4.6.4",
     "unocss": "0.33.4",
     "vite": "2.9.9",
-    "vitest": "0.12.5"
+    "vitest": "0.12.6"
   }
 }
