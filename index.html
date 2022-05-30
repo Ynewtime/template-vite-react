@@ -10,15 +10,17 @@
     <script>
       ;(function () {
         // Load Inter fonts if not available
+        const checkFont = (name) => document.fonts.check(`16px ${name}`)
+        const createLink = (href) => {
+          const head = document.getElementsByTagName('head')[0]
+          const link = document.createElement('link')
+          link.type = 'text/css'
+          link.rel = 'stylesheet'
+          head.appendChild(link)
+          link.href = href
+        }
         document.fonts.ready.then(() => {
-          if (!document.fonts.check('16px Inter')) {
-            const head = document.getElementsByTagName('head')[0]
-            const link = document.createElement('link')
-            link.type = 'text/css'
-            link.rel = 'stylesheet'
-            head.appendChild(link)
-            link.href = 'https://rsms.me/inter/inter.css'
-          }
+          if (!checkFont('Inter')) createLink('https://rsms.me/inter/inter.css')
         })
       })()
     </script>
